@@ -80,16 +80,10 @@ Masters in Computer Science with **3 Years** of experience in **Full Stack** dev
 
 ---
 
-* Ranked in the **Top 0.1% of 1.2 million** students in the 2016 IIT JEE Advanced exam.  
-* Secured **First Place** in the University at Buffalo's CS program for developing the **Best Capstone Project** among 100 students.
+* Ranked in the **Top 0.1% of 1.2 million** students in the 2017 IIT JEE Advanced exam.  
 
 ---
 
 **PROJECTS** 
 
 ---
-
-* **Distributed Systems:** Implemented RAFT consensus algorithms in Golang for replicated state machine & leader election, Chandy Lamport algorithm for distributed snapshots and distributed Map/Reduce library.  
-* **TacoDB:** Collaborated with a team of 2 to build a mini relational database in C++, project involved implementing key components such as Buffer Management, Data Layout, Building B-Tree Index, Query Processing, and Join Algorithms.  
-* **Predicting Weather Changes:** Preprocessed 6 regression algorithms to predict rainfall and other disasters. Through cleaning and munging data, achieved 98% accuracy rate in predictions.  
-* **Content Management System:** Manages the lifecycle of content(audio,video, and podcast) spanning ingestion of content & metadata, transcoding & encrypting , storage on cloud(S3), publishing content, and managing playlists.
