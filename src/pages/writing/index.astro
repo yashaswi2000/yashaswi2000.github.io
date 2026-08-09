@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const posts = (await getCollection("writing")).sort(
+  (a, b) => b.data.published.valueOf() - a.data.published.valueOf(),
+);
+---
+
+<BaseLayout title="Writing" description="Notes on infrastructure, machine learning, and building software systems.">
+  <section class="page-hero shell writing-hero">
+    <p class="eyebrow">Writing / Field notes</p>
+    <h1>Working notes from the <em>edges of understanding.</em></h1>
+    <div class="page-intro"><p>Concise observations from building systems, reading deeply, and learning in public.</p></div>
+  </section>
+  <section class="shell writing-list section" aria-label="Articles">
+    {posts.map((post, index) => (
+      <a href={`/writing/${post.id}/`} data-reveal>
+        <span class="writing-number">{String(index + 1).padStart(2, "0")}</span>
+        <div><p>{post.data.topic} · <time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("en-US", { month: "short", year: "numeric" })}</time></p><h2>{post.data.title}</h2><p>{post.data.description}</p></div>
+        <span aria-hidden="true">↗</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
