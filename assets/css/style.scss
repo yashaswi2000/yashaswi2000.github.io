@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.profile-pic {
+    order: 1;
+    float: left;
+    width: 60px; /* Set the desired width */
+    height: 60px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Space between the image and the title */
+    margin-left: 10px; /* Space between the image and the title */
+}
