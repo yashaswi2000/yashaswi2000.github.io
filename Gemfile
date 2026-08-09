@@ -8,6 +8,10 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.3"
+# Ruby 3.4 no longer bundles these standard-library gems by default, but
+# Jekyll and safe_yaml still require them at build time.
+gem "csv"
+gem "base64"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", github: "jekyll/minima"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
