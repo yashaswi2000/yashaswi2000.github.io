@@ -1,6 +1,8 @@
+node_modules
+dist
+.astro
 _site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+.wrangler
+.dev.vars
+.DS_Store
 .qodo
